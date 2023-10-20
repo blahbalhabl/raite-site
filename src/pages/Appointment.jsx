@@ -7,6 +7,8 @@ import RegisterForm from "../components/RegisterForm";
 import APPOINTMENT_BG from "../assets/images/Appointment hero section.png";
 import DOCTOR_BG from "../assets/images/Meet the doctor background.png";
 import MEET_THE_DOCTOR from "../assets/images/Meet the doctor.png";
+import CTA from "../assets/images/CTA.png";
+import Footer from "../components/Footer";
 
 const Appointment = () => {
   const nav = useNavigate();
@@ -84,6 +86,12 @@ const Appointment = () => {
             className="h-full w-full object-contain"
           />
         </div>
+      </div>
+      <div className="h-screen bg-secondary-tone-1 relative">
+        <img src={CTA} alt="cta" className="h-full w-full object-contain" />
+      </div>
+      <div className="h-screen bg-secondary-tone-1">
+        <Footer />
       </div>
     </>
   );
