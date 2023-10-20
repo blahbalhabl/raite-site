@@ -20,3 +20,9 @@
   font-family: "Mazzard-italic-bold";
   src: url("./assets/fonts/MazzardH-BoldItalic.otf");
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

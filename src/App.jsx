@@ -5,7 +5,7 @@ import Registration from "./pages/Registration";
 
 const App = () => {
   return (
-    <div className="font-mazzard h-screen w-screen">
+    <div className="font-mazzard h-max w-full">
       <Router>
         <Header />
         <Routes>
