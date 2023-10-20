@@ -14,6 +14,8 @@ export default {
       fontFamily: {
         mazzard: ["Mazzard", "sans serif"],
         "mazzard-italic": ["Mazzard-italic", "sans serif"],
+        "mazzard-bold": ["Mazzard-Bold", "sans serif"],
+        "mazzard-italic-bold": ["Mazzard-italic-bold", "sans serif"],
       },
     },
   },

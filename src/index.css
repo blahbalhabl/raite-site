@@ -4,10 +4,19 @@
 
 @font-face {
   font-family: "Mazzard";
-  src: url("./assets//fonts/MazzardH-Black.otf");
+  src: url("./assets//fonts/MazzardH-ExtraLight.otf");
 }
 
 @font-face {
   font-family: "Mazzard-italic";
-  src: url("./assets/fonts/MazzardH-BlackItalic.otf");
+  src: url("./assets/fonts/MazzardH-ExtraBoldItalic.otf");
+}
+@font-face {
+  font-family: "Mazzard-Bold";
+  src: url("./assets//fonts/MazzardH-Bold.otf");
+}
+
+@font-face {
+  font-family: "Mazzard-italic-bold";
+  src: url("./assets/fonts/MazzardH-BoldItalic.otf");
 }
