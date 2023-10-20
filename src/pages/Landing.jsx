@@ -19,6 +19,12 @@ import Steps2 from '../assets/images/Steps 2.png'
 import Steps3 from '../assets/images/Steps 3.png'
 import Steps4 from '../assets/images/Steps 4.png'
 import Steps5 from '../assets/images/Steps 5.png'
+import Testimonals from '../assets/images/Testimonials Background.png'
+import Testimonal from '../assets/images/Testimonial.png'
+import Star from '../assets/images/star.png'
+import Blogs1 from '../assets/images/Blogs 1.png'
+import Blogs2 from '../assets/images/Blogs 2.png'
+import Blogs3 from '../assets/images/Blogs 3.png'
 
 const Landing = () => {
   return (
@@ -34,10 +40,8 @@ const Landing = () => {
           </h1>
           <div className='text-white w-2/6'>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae, id cum veniam vitae odio delectus dicta voluptas dolorem atque!</p>
-            <div className='flex text-white'>
-              <button className=''>
-                Lets Talk!
-              </button>
+            <div className='flex text-white mt-5'>
+              <Button className='mr-10' label="Let's Talk" type={'primary'}/>
               <button className=''>
                 <img src={Play} />
               </button>
@@ -129,7 +133,7 @@ const Landing = () => {
       <div className='object-contain mt-32 w-full'>
         <img className='w-full' src={Slider}  />
       </div>
-      <div className='p-[10%]'>
+      <div className='p-[10%] pb-10'>
         <div className='flex justify-between items-center'>
           <span className='flex flex-col gap-5 text-5xl font-bold'>
             <h1>Pre-Clinical Intake That's</h1>
@@ -140,15 +144,144 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <div className='flex flex-col h-max'>
+      <div className='relative flex flex-col justify-center items-center h-max p-[10%] pt-0 gap-5'>
         <div className='flex'>
-          <img src={Steps1} alt="" />
-          <img src={Steps2} alt="" />
+          <img className='-mr-24' src={Steps1} alt="" />
+          <div className='relative text-white font-mazzard-bold'>
+            <h2 className='absolute top-11 left-10 z-20 text-5xl'>
+              01
+            </h2>
+            <h2 className='absolute top-20 left-44 text-5xl'>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, vero.
+            </h2>
+            <img src={Steps2} alt="" />
+          </div>
         </div>
-        <div className='flex'>
-
+        <div className='flex justify-center items-center text-white font-bold p-[10%] pt-0 gap-5'>
+          <div className='relative flex -mr-40'>
+            <h2 className='absolute top-11 right-52 z-20 text-5xl'>
+              02
+            </h2>
+            <h2 className='absolute top-40 text-3xl left-10 w-4/6'>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </h2>
+            <img src={Steps3} />
+          </div>
+          <img src={Steps4} />
+          <div className='relative flex text-black'>
+            <h2 className='absolute top-11 left-16 z-20 text-5xl'>
+              03
+            </h2>
+            <h2 className='absolute top-44 text-3xl left-10 w-5/6'>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </h2>
+            <img src={Steps5} />
+          </div>
         </div>
       </div>
+      {/* Section 4 */}
+      <div className='w-full h-auto relative flex justify-center items-center'>
+        <div className='flex flex-col justify-center items-center absolute'>
+          <h1 className='text-7xl font-mazzard-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-600'>
+            Client Testimonals
+          </h1>
+          <div className='flex flex-col gap-5 absolute top-32'>
+            <h1 className='text-5xl font-mazzard-bold lg:ml-96'>Jane Austine</h1>
+            <p className='lg:ml-96'>43 years old</p>
+            <span className='flex lg:ml-96'>
+              <img src={Star}/>
+              <img src={Star}/>
+              <img src={Star}/>
+              <img src={Star}/>
+              <img src={Star}/>
+            </span>
+            <p className='ml-32 mt-24 w-5/6 p-5 pt-0 font-bold text-lg'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolores ipsam animi totam eum minima nobis, quod culpa at dolorem. Ut illum deserunt labore qui velit numquam tenetur! Illo, commodi expedita praesentium maiores quia ab corrupti magnam, veniam officiis aliquam reiciendis repudiandae voluptates facere architecto illum ullam rerum, perspiciatis quod!
+            </p>
+          </div>
+          
+          <img src={Testimonal} />
+        </div>
+        <img className='w-full' src={Testimonals}/>
+      </div>
+      {/* Section 5 */}
+      <div className='flex flex-col gap-10 p-[10%]'>
+        <div className='px-20'>
+          <h1 className='text-3xl font-mazzard-bold'>
+            Not just words,
+          </h1>
+          <h1 className='text-3xl font-mazzard-bold'>
+            Take a look at our writing.
+          </h1>
+        </div>
+        <div className='border-t-2 border-b-2 py-10 flex justify-between items-center mx-20'>
+          <p className='w-2/6 font-bold'>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet at repudiandae eum deserunt officiis tempore dolor voluptatibus maiores sequi vero.
+          </p>
+          <Button className='w-max py-3 px-20' label="View all Articles" type={'primary'}/>
+        </div>
+        <div className=' flex flex-col items-start justify-center lg:flex-row'>
+          <div className='relative flex flex-col gap-5 h-full'>
+            <div className=''>
+              <div className='absolute flex flex-col gap-5 text-white left-96 top-10 text-sm'>
+                <span className='flex gap-2'>
+                  <h3 className='bg-gradient-to-t from-blue-300 to-blue-500 px-1'>
+                    Mental Health
+                  </h3>
+                  <p>2023, 25 May</p>
+                </span>
+                  <h3 className='w-4/6 font-bold text-base'>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, in?
+                  </h3>
+                  <p className='w-4/6 text-sm'>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus unde repellat iusto officiis tempore quia officia rerum aliquam molestias a!
+                  </p>
+                  <Button className='text-white border-white w-3/6' label='Read More'/>
+              </div>
+              <img className='w-5/6' src={Blogs3} />
+            </div>
+            <div className='relative'>
+              <div className='absolute flex flex-col gap-5 text-white left-10 top-10 text-sm w-2/6'>
+                <span className='flex gap-2'>
+                  <h3 className='bg-gradient-to-t from-blue-300 to-blue-500 px-1'>
+                    Self Understanding
+                  </h3>
+                  <p>2023, 25 May</p>
+                </span>
+                <h3 className='font-bold text-base'>
+                  Lorem ipsum dolor sit amet consectetur,
+                </h3>
+                <p className='text-sm'>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus unde repellat iusto officiis tempore quia officia rerum aliquam molestias a!
+                </p>
+                <Button className='text-white border-white w-3/6' label='Read More'/>
+              </div>
+              <img src={Blogs2} />
+            </div>
+          </div>
+          <div className='mt-5 lg:mt-0 lg:-ml-28'>
+            <div className='relative'>
+              <div className='absolute flex flex-col gap-2 right-5 bottom-5 text-sm w-4/6'>
+                <span className='flex gap-2'>
+                  <h3 className='bg-white text-blue-500 px-1'>
+                    Mental Health
+                  </h3>
+                  <p>2023, 25 May</p>
+                </span>
+                <h3 className='font-bold text-base'>
+                  Lorem ipsum dolor sit amet consectetur,
+                </h3>
+                <p className='text-sm'>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus unde repellat iusto officiis tempore quia officia rerum aliquam molestias a!
+                </p>
+                <Button className='text-white border-white w-3/6' label='Read More'/>
+              </div>
+              <img src={Blogs1} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 };
