@@ -121,7 +121,7 @@ const Landing = () => {
             <span className='p-4 px-5 text-xl font-mazzard-bold text-white rounded-full bg-primary w-max'>
               03
             </span>
-            <h1 className='text-4xl font-mazzard-bold w-5/6'>
+            <h1 className='text-3xl font-mazzard-bold w-5/6'>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet consectetur quia labore veniam! Eligendi ratione aliquid facilis nam saepe voluptate.
             </h1>
             <span
@@ -162,11 +162,11 @@ const Landing = () => {
           </div>
         </div>
         <div className='flex justify-center items-center text-white font-bold p-[10%] pt-0 gap-5'>
-          <div className='relative flex -mr-40'>
+          <div className='relative flex -mr-36'>
             <h2 className='absolute top-11 right-52 z-20 text-5xl'>
               02
             </h2>
-            <h2 className='absolute top-40 text-3xl left-10 w-4/6'>
+            <h2 className='absolute top-40 text-2xl left-8 w-4/6'>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </h2>
             <img src={Steps3} />
@@ -176,7 +176,7 @@ const Landing = () => {
             <h2 className='absolute top-11 left-16 z-20 text-5xl'>
               03
             </h2>
-            <h2 className='absolute top-44 text-3xl left-10 w-5/6'>
+            <h2 className='absolute top-40 text-2xl left-10 w-5/6'>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </h2>
             <img src={Steps5} />
