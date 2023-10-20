@@ -1,17 +1,21 @@
 import Logo from "../assets/images/Logo.png";
 import Box from "../assets/images/box 1.png";
 import Chats from "../assets/images/chat notif white.png";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Button from "./Button";
 
 const Header = () => {
+  const nav = useNavigate();
   return (
     <div className="flex justify-between items-center bg-transparent px-20 ">
       <div className="z-10">
         <img src={Logo} alt="logo.png" />
       </div>
       <div className="flex gap-5 w-[400px] items-center">
-        <span className="text-white font-mazzard-bold w-[300px]">
+        <span
+          onClick={() => nav("/registration")}
+          className="text-white font-mazzard-bold w-[300px] cursor-pointer"
+        >
           Register for Free
         </span>
         <Button type={"primary"} label={"Login"} />

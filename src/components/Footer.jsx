@@ -1,8 +1,11 @@
 import Header from "./Header";
 import FooterImg from "../assets/images/Footer.png";
 import FooterBtn from "../assets/images/hero banner button.png";
+import Button from "./Button";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const nav = useNavigate();
   return (
     <div className="px-10 bottom-0 w-full relative">
       <div className="w-full">
@@ -21,8 +24,11 @@ const Footer = () => {
                 dolorem atque!
               </p>
               <div className="flex text-white">
-                <button className="">Lets Talk!</button>
-                <button className="">Icon</button>
+                <Button
+                  label={"Let's Talk"}
+                  type={"primary"}
+                  handleClick={() => nav("/appointment")}
+                />
               </div>
             </div>
           </div>
