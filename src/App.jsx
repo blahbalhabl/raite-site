@@ -4,7 +4,7 @@ import Header from "./components/Header";
 
 const App = () => {
   return (
-    <div className="h-screen w-screen">
+    <div className="font-mazzard h-screen w-screen">
       <Router>
         <Header />
         <Routes>
