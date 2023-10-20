@@ -1,6 +1,6 @@
-import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Landing from './pages/Landing';
-import Header from './components/Header';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Landing from "./pages/Landing";
+import Header from "./components/Header";
 
 const App = () => {
   return (
@@ -8,11 +8,11 @@ const App = () => {
       <Router>
         <Header />
         <Routes>
-          <Route path='/' element={<Landing />} />
+          <Route path="/" element={<Landing />} />
         </Routes>
       </Router>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
