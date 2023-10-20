@@ -1,5 +1,7 @@
+import { useNavigate } from 'react-router-dom'
 import Button from '../components/Button'
 import Footer from '../components/Footer'
+import Header from '../components/Header'
 import Union from '../assets/images/Union.png'
 import IconText from '../assets/images/idk.png'
 import Patients from '../assets/images/Patients.png'
@@ -27,42 +29,44 @@ import Blogs2 from '../assets/images/Blogs 2.png'
 import Blogs3 from '../assets/images/Blogs 3.png'
 
 const Landing = () => {
+  const nav = useNavigate();
   return (
-    <div className="h-max absolute w-full text-black bg-slate-100">
+    <>
+    <Header />
+    <div className="h-max absolute top-0 w-full text-black bg-slate-100">
       {/* Section 1 */}
-      <div className='absolute w-full z-0 px-10'>
-        <img className='w-full' src={Union} />
-      </div>
-      <div className="relative mt-96 px-[10%] flex-col gap-64 w-full z-20">
-        <div className=" flex justify-between gap-32">
-          <h1 className="text-white text-8xl font-bold w-4/6">
-            Lorem ipsum dolor sit amet.
-          </h1>
-          <div className='text-white w-2/6'>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae, id cum veniam vitae odio delectus dicta voluptas dolorem atque!</p>
-            <div className='flex text-white mt-5'>
-              <Button className='mr-10' label="Let's Talk" type={'primary'}/>
-              <button className=''>
-                <img src={Play} />
-              </button>
+      <div className='absolute bg-primary rounded-b-[150px] overflow-clip'>
+        <div className="relative mt-96 px-[10%] flex-col gap-64 w-full z-20">
+          <div className=" flex flex-col justify-center items-center gap-10 lg:flex-row lg:justify-between lg:gap-32">
+            <h1 className="text-white text-4xl lg:text-8xl font-bold lg:w-4/6">
+              Lorem ipsum dolor sit amet.
+            </h1>
+            <div className='text-white w-4/6 lg:w-2/6'>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae, id cum veniam vitae odio delectus dicta voluptas dolorem atque!</p>
+              <div className='flex text-white mt-5'>
+                <Button className='mr-10' label="Let's Talk" type={'primary'} handleClick={() => nav('/appointment')}/>
+                <button className=''>
+                  <img src={Play} />
+                </button>
+              </div>
             </div>
           </div>
+          <div className='mt-44 flex justify-between items-center mb-[800px]'>
+              <img src={IconText} />
+              <img src={Patients}/>
+          </div>
+          <div className='relative left-1/2 -translate-x-52 bottom-0'>
+            <img className='absolute -bottom-48 -left-72 rotate-[-25deg]' src={Banner1} />
+            <img className='absolute -bottom-24' src={Banner} />
+            <img className='absolute -bottom-48 left-64 rotate-[20deg]' src={Doctor3} />
+          </div>
         </div>
-        <div className='mt-44 flex justify-between items-center'>
-            <img src={IconText} />
-            <img src={Patients}/>
-        </div>
-        {/* <div className='relative bottom-0'>
-          <img className='absolute -bottom-44 -left-72 rotate-[-25deg]' src={Banner1} />
-          <img className='absolute bottom-0' src={Banner} />
-          <img className='absolute -bottom-44 left-64 rotate-[20deg]' src={Doctor3} />
-          <button className="absolute -bottom-24 left-20">
-            <img src={ButtonImg} />
-          </button>
-        </div> */}
       </div>
-      <div className='mt-96 flex flex-col'>
-        <div className='flex justify-between items-center gap-20 mt-[700px] px-[10%] my-44'>
+      <button className="absolute top-[1550px] left-1/2 z-20 -translate-x-1/2">
+          <img src={ButtonImg} />
+      </button>
+      <div className='mt-[1200px] flex flex-col'>
+        <div className='flex flex-col justify-between items-center gap-20 mt-[700px] px-[10%] my-44 lg:flex-row'>
           <span className='w-2/4'>
             <h1 className='p-5 pl-0 w-max border-t-2 text-5xl font-mazzard-bold text-start border-blue-300'>
               About Us
@@ -75,7 +79,7 @@ const Landing = () => {
         </div>
       </div>
       {/* Section 2 */}
-      <div className='flex justify-between px-[10%]'>
+      <div className='flex flex-col justify-between px-[10%] lg:flex-row'>
         <div className='w-auto'>
           <img className='w-full' src={AboutUs2} alt="" />
           <div className='flex my-5 p-5 px-0 gap-10'>
@@ -90,7 +94,7 @@ const Landing = () => {
           </div>
           <img className='w-full' src={AboutUs1} alt="" />
         </div>
-        <div className='flex w-1/2 flex-col gap-10'>
+        <div className='flex lg:w-1/2 flex-col gap-10'>
           <div className='flex flex-col gap-10 border-b-2 border-b-primary p-10'>
             <span className='p-4 px-5 text-xl font-mazzard-bold text-white rounded-full bg-primary w-max'>
               01
@@ -283,6 +287,7 @@ const Landing = () => {
       </div>
       <Footer />
     </div>
+    </>
   );
 };
 
