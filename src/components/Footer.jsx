@@ -1,10 +1,9 @@
 import Header from "./Header";
-import Button from "./Button";
 import Play from "../assets/images/Play button.png";
 import FooterImg from "../assets/images/Footer.png";
 import FooterBtn from "../assets/images/hero banner button.png";
-import Button from "./Button";
 import { useNavigate } from "react-router-dom";
+import Button from "./Button";
 
 const Footer = () => {
   const nav = useNavigate();
@@ -31,6 +30,7 @@ const Footer = () => {
                     className="mr-10"
                     label="Let's Talk"
                     type={"primary"}
+                    handleClick={() => nav("/appointment")}
                   />
                   <button className="">
                     <img src={Play} />
